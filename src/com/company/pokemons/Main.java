@@ -14,10 +14,12 @@ import java.util.ArrayList;
 public class Main {
   
     public static void main(String[] args){
-        Pokemon pokemon = new Pokemon();
+        PokemonAgua pokemonAgua = new PokemonAgua();
+        PokemonPlanta pokemonPlanta = new PokemonPlanta();
+        PokemonFoc pokemonFoc = new PokemonFoc();
         
-        Pokemon Squirtle = new Pokemon("Squirtle", 20, 10, 30);
-        Pokemon Pikachu = new Pokemon("Pikachu", 15, 20, 27);
+        PokemonAgua pokemonAgua = new PokemonAgua("Squirtle", 20, 10, 30);
+        PokemonPlanta pokemonPlanta = new PokemonPlanta("Bulbasaur", 15, 20, 27);
     
         
         pokemon.altaPokemon(Squirtle);

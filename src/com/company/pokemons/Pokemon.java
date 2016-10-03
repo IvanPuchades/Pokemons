@@ -12,7 +12,7 @@ import java.util.List;
  *
  * @author 48224788K
  */
-public class Pokemon {
+public abstract class Pokemon {
     private List<Pokemon> pokemonList;
     public Pokemon(){
         pokemonList = new ArrayList<>();
