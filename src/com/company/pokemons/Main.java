@@ -24,6 +24,8 @@ public class Main {
         pokemon.altaPokemon(Pikachu);
         
         System.out.println("Se ha introducido un nuevo pokemon: " + pokemon.obtenerTodas());
+
+        //prueba
     }
     
 }
