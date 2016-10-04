@@ -10,7 +10,8 @@ package com.company.pokemons;
  * @author 48224788K
  */
 public interface Capturable {
-    
-   Boolean capturable = false;
-    
+
+   //   Boolean capturable = false;
+   public boolean capturar();
+
 }
