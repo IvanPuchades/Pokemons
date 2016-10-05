@@ -17,10 +17,10 @@ public class Main {
     public static void main(String[] args){
 
 
-        Pokemon Squirtle = new PokemonAgua("Squirtle", 20, 10, 30);
-        Pokemon Charmander = new PokemonFuego("charmander", 15, 20, 27);
+        Pokemon Squirtle = new PokemonAgua("squirtle", 20, 10, 30, "agua", "foc", "planta");
+        Pokemon Charmander = new PokemonFoc("charmander", 15, 20, 27, "foc", "planta", "agua");
         System.out.println("pokemon1: "+Squirtle.toString());
-        System.out.println("pokemon2: "+Pikachu.toString());
+        System.out.println("pokemon2: "+Charmander.toString());
 
 
     }
