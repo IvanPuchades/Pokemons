@@ -12,7 +12,7 @@ import java.util.List;
  *
  * @author 48224788K
  */
-public abstract class Pokemon {
+public abstract class Pokemon implements Capturable{
     private List<Pokemon> pokemonList;
     public Pokemon(){
         pokemonList = new ArrayList<>();

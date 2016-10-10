@@ -23,15 +23,18 @@ public class PokemonAgua extends Pokemon implements Capturable {
     public boolean capturar() {
 
 
-        int n = ThreadLocalRandom.current().nextInt(100 - 1 + 1) + 1;
+        int n = ThreadLocalRandom.current().nextInt(120 - 20 + 1);
+        int numCapturar = n - this.getPuntsSalut();
 
-        if (n > this.getDefensa()) {
+        if (numCapturar > this.getDefensa()) {
 
-            System.out.println("Enhorabuena, lo has capturado");
+            return true;
+
 
         } else {
-            System.out.println("Que pena.... intentalo otra vez");
+            return false;
+
         }
-    return capturar();
+
     }
 }

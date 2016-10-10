@@ -22,6 +22,23 @@ public class Main {
         System.out.println("pokemon1: "+Squirtle.toString());
         System.out.println("pokemon2: "+Charmander.toString());
 
+        List<Capturable> pokemonsCapturables = new ArrayList<>();
+        pokemonsCapturables.add(Squirtle);
+        pokemonsCapturables.add(Charmander);
+
+        pokemonsCapturables.
+                forEach(pokemon ->
+                {
+                    if (pokemon.capturar()) {
+                        System.out.println("Pokemon capturado ");
+                    }else {
+                        System.out.println("Pokemon no capturado ");
+                    }
+                });
+
+
+
+
 
     }
     private List<Pokemon> pokemonList;
