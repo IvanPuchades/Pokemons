@@ -1,15 +1,11 @@
 package com.company.pokemons;
 
-import java.util.Random;
+import java.util.concurrent.ThreadLocalRandom;
 
 /**
  * Created by dam on 3/10/16.
  */
-public class PokemonAgua extends Pokemon implements Capturable{
-
-
-
-
+public class PokemonAgua extends Pokemon implements Capturable {
 
 
     private String tipus = "agua";
@@ -27,21 +23,15 @@ public class PokemonAgua extends Pokemon implements Capturable{
     public boolean capturar() {
 
 
+        int n = ThreadLocalRandom.current().nextInt(100 - 1 + 1) + 1;
 
-        int n= random.nextInt(100 - 1 + 1) + 1;
+        if (n > this.getDefensa()) {
 
-       if(n> this.getDefensa() )
-            {
+            System.out.println("Enhorabuena, lo has capturado");
 
-           System.out.println("Enhorabuena, lo has capturado");
-
-       } else
-            {
-           System.out.println("Que pena.... intentalo otra vez");
-            }
-
-
+        } else {
+            System.out.println("Que pena.... intentalo otra vez");
+        }
+    return capturar();
     }
-
-
 }
