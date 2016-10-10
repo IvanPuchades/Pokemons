@@ -18,13 +18,26 @@ public class Main {
 
 
         Pokemon Squirtle = new PokemonAgua("squirtle", 20, 10, 30, "agua", "foc", "planta");
+        Pokemon Lapras = new PokemonAgua("lapras", 40, 30, 20, "agua", "foc", "planta");
         Pokemon Charmander = new PokemonFoc("charmander", 15, 20, 27, "foc", "planta", "agua");
+        Pokemon Ponyta = new PokemonFoc("ponyta" , 25, 20, 15, "foc", "planta", "agua");
+        Pokemon Bulbasaur = new PokemonPlanta("bulbasaur" , 21, 15, 30, "planta", "agua", "foc");
+        Pokemon Odish = new PokemonPlanta("odish" , 21, 15, 30, "planta", "agua", "foc");
+
         System.out.println("pokemon1: "+Squirtle.toString());
-        System.out.println("pokemon2: "+Charmander.toString());
+        System.out.println("pokemon2: "+Lapras.toString());
+        System.out.println("pokemon3: "+Charmander.toString());
+        System.out.println("pokemon4: "+Ponyta.toString());
+        System.out.println("pokemon5: "+Bulbasaur.toString());
+        System.out.println("pokemon6: "+Odish.toString());
 
         List<Capturable> pokemonsCapturables = new ArrayList<>();
         pokemonsCapturables.add(Squirtle);
+        pokemonsCapturables.add(Lapras);
         pokemonsCapturables.add(Charmander);
+        pokemonsCapturables.add(Ponyta);
+        pokemonsCapturables.add(Bulbasaur);
+        pokemonsCapturables.add(Odish);
 
         pokemonsCapturables.
                 forEach(pokemon ->
@@ -35,10 +48,6 @@ public class Main {
                         System.out.println("Pokemon no capturado ");
                     }
                 });
-
-
-
-
 
     }
     private List<Pokemon> pokemonList;
