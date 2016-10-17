@@ -49,11 +49,30 @@ public class Main {
                     }
                 });
 
+        List<Capturable> entitatsCapturables = new ArrayList<>();
+        entitatsCapturables.add(Squirtle);
+        entitatsCapturables.add(Lapras);
+        entitatsCapturables.add(Charmander);
+        entitatsCapturables.add(Ponyta);
+        entitatsCapturables.add(Bulbasaur);
+        entitatsCapturables.add(Odish);
+        entitatsCapturables.add(new Encostipat());
+
+        entitatsCapturables.
+                forEach(pokemon ->
+                {
+                    if (pokemon.capturar()) {
+                        System.out.println("Encostipat capturado ");
+                    }else {
+                        System.out.println("Encostipat no capturado ");
+                }
+                });
     }
-    private List<Pokemon> pokemonList;
+
+
 
     public Main(){
-        pokemonList = new ArrayList<>();
+        List<Pokemon>pokemonList = new ArrayList<>();
     }
     public void altaPokemon(Pokemon pokemon){
         Boolean repe = false;
